@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -124,19 +124,6 @@ calibrate/fast:
 .PHONY : calibrate/fast
 
 #=============================================================================
-# Target rules for targets named calibrate_stereo
-
-# Build rule for target.
-calibrate_stereo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 calibrate_stereo
-.PHONY : calibrate_stereo
-
-# fast build rule for target.
-calibrate_stereo/fast:
-	$(MAKE) -f CMakeFiles/calibrate_stereo.dir/build.make CMakeFiles/calibrate_stereo.dir/build
-.PHONY : calibrate_stereo/fast
-
-#=============================================================================
 # Target rules for targets named record_depth
 
 # Build rule for target.
@@ -148,6 +135,32 @@ record_depth: cmake_check_build_system
 record_depth/fast:
 	$(MAKE) -f CMakeFiles/record_depth.dir/build.make CMakeFiles/record_depth.dir/build
 .PHONY : record_depth/fast
+
+#=============================================================================
+# Target rules for targets named save_depth_img
+
+# Build rule for target.
+save_depth_img: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 save_depth_img
+.PHONY : save_depth_img
+
+# fast build rule for target.
+save_depth_img/fast:
+	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/build
+.PHONY : save_depth_img/fast
+
+#=============================================================================
+# Target rules for targets named calibrate_stereo
+
+# Build rule for target.
+calibrate_stereo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 calibrate_stereo
+.PHONY : calibrate_stereo
+
+# fast build rule for target.
+calibrate_stereo/fast:
+	$(MAKE) -f CMakeFiles/calibrate_stereo.dir/build.make CMakeFiles/calibrate_stereo.dir/build
+.PHONY : calibrate_stereo/fast
 
 calib_intrinsic.o: calib_intrinsic.cpp.o
 
@@ -203,6 +216,33 @@ calib_stereo.cpp.s:
 	$(MAKE) -f CMakeFiles/calibrate_stereo.dir/build.make CMakeFiles/calibrate_stereo.dir/calib_stereo.cpp.s
 .PHONY : calib_stereo.cpp.s
 
+depth_img.o: depth_img.cpp.o
+
+.PHONY : depth_img.o
+
+# target to build an object file
+depth_img.cpp.o:
+	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/depth_img.cpp.o
+.PHONY : depth_img.cpp.o
+
+depth_img.i: depth_img.cpp.i
+
+.PHONY : depth_img.i
+
+# target to preprocess a source file
+depth_img.cpp.i:
+	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/depth_img.cpp.i
+.PHONY : depth_img.cpp.i
+
+depth_img.s: depth_img.cpp.s
+
+.PHONY : depth_img.s
+
+# target to generate assembly for a file
+depth_img.cpp.s:
+	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/depth_img.cpp.s
+.PHONY : depth_img.cpp.s
+
 record_depth.o: record_depth.cpp.o
 
 .PHONY : record_depth.o
@@ -236,17 +276,21 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... calibrate"
-	@echo "... calibrate_stereo"
-	@echo "... record_depth"
 	@echo "... rebuild_cache"
+	@echo "... record_depth"
+	@echo "... edit_cache"
+	@echo "... save_depth_img"
+	@echo "... calibrate_stereo"
 	@echo "... calib_intrinsic.o"
 	@echo "... calib_intrinsic.i"
 	@echo "... calib_intrinsic.s"
 	@echo "... calib_stereo.o"
 	@echo "... calib_stereo.i"
 	@echo "... calib_stereo.s"
+	@echo "... depth_img.o"
+	@echo "... depth_img.i"
+	@echo "... depth_img.s"
 	@echo "... record_depth.o"
 	@echo "... record_depth.i"
 	@echo "... record_depth.s"

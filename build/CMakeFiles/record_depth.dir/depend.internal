@@ -13,6 +13,9 @@ CMakeFiles/record_depth.dir/record_depth.cpp.o
  /usr/local/include/opencv2/core/bufferpool.hpp
  /usr/local/include/opencv2/core/core.hpp
  /usr/local/include/opencv2/core/core_c.h
+ /usr/local/include/opencv2/core/cuda.hpp
+ /usr/local/include/opencv2/core/cuda.inl.hpp
+ /usr/local/include/opencv2/core/cuda_types.hpp
  /usr/local/include/opencv2/core/cvdef.h
  /usr/local/include/opencv2/core/cvstd.hpp
  /usr/local/include/opencv2/core/cvstd.inl.hpp
@@ -32,6 +35,7 @@ CMakeFiles/record_depth.dir/record_depth.cpp.o
  /usr/local/include/opencv2/core/types_c.h
  /usr/local/include/opencv2/core/utility.hpp
  /usr/local/include/opencv2/core/version.hpp
+ /usr/local/include/opencv2/cudastereo.hpp
  /usr/local/include/opencv2/features2d.hpp
  /usr/local/include/opencv2/flann/config.h
  /usr/local/include/opencv2/flann/defines.h

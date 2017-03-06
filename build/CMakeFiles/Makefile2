@@ -97,43 +97,6 @@ clean: CMakeFiles/calibrate.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/calibrate_stereo.dir
-
-# All Build rule for target.
-CMakeFiles/calibrate_stereo.dir/all:
-	$(MAKE) -f CMakeFiles/calibrate_stereo.dir/build.make CMakeFiles/calibrate_stereo.dir/depend
-	$(MAKE) -f CMakeFiles/calibrate_stereo.dir/build.make CMakeFiles/calibrate_stereo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles --progress-num=3,4 "Built target calibrate_stereo"
-.PHONY : CMakeFiles/calibrate_stereo.dir/all
-
-# Include target in all.
-all: CMakeFiles/calibrate_stereo.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/calibrate_stereo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/calibrate_stereo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 0
-.PHONY : CMakeFiles/calibrate_stereo.dir/rule
-
-# Convenience name for target.
-calibrate_stereo: CMakeFiles/calibrate_stereo.dir/rule
-
-.PHONY : calibrate_stereo
-
-# clean rule for target.
-CMakeFiles/calibrate_stereo.dir/clean:
-	$(MAKE) -f CMakeFiles/calibrate_stereo.dir/build.make CMakeFiles/calibrate_stereo.dir/clean
-.PHONY : CMakeFiles/calibrate_stereo.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/calibrate_stereo.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/record_depth.dir
 
 # All Build rule for target.
@@ -167,6 +130,80 @@ CMakeFiles/record_depth.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/record_depth.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/save_depth_img.dir
+
+# All Build rule for target.
+CMakeFiles/save_depth_img.dir/all:
+	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/depend
+	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles --progress-num=7,8 "Built target save_depth_img"
+.PHONY : CMakeFiles/save_depth_img.dir/all
+
+# Include target in all.
+all: CMakeFiles/save_depth_img.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/save_depth_img.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/save_depth_img.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 0
+.PHONY : CMakeFiles/save_depth_img.dir/rule
+
+# Convenience name for target.
+save_depth_img: CMakeFiles/save_depth_img.dir/rule
+
+.PHONY : save_depth_img
+
+# clean rule for target.
+CMakeFiles/save_depth_img.dir/clean:
+	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/clean
+.PHONY : CMakeFiles/save_depth_img.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/save_depth_img.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/calibrate_stereo.dir
+
+# All Build rule for target.
+CMakeFiles/calibrate_stereo.dir/all:
+	$(MAKE) -f CMakeFiles/calibrate_stereo.dir/build.make CMakeFiles/calibrate_stereo.dir/depend
+	$(MAKE) -f CMakeFiles/calibrate_stereo.dir/build.make CMakeFiles/calibrate_stereo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles --progress-num=3,4 "Built target calibrate_stereo"
+.PHONY : CMakeFiles/calibrate_stereo.dir/all
+
+# Include target in all.
+all: CMakeFiles/calibrate_stereo.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/calibrate_stereo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/calibrate_stereo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 0
+.PHONY : CMakeFiles/calibrate_stereo.dir/rule
+
+# Convenience name for target.
+calibrate_stereo: CMakeFiles/calibrate_stereo.dir/rule
+
+.PHONY : calibrate_stereo
+
+# clean rule for target.
+CMakeFiles/calibrate_stereo.dir/clean:
+	$(MAKE) -f CMakeFiles/calibrate_stereo.dir/build.make CMakeFiles/calibrate_stereo.dir/clean
+.PHONY : CMakeFiles/calibrate_stereo.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/calibrate_stereo.dir/clean
 
 .PHONY : clean
 

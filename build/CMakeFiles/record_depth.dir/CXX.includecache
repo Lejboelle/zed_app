@@ -23,6 +23,8 @@ opencv2/core/utility.hpp
 -
 opencv2/ximgproc/disparity_filter.hpp
 -
+opencv2/cudastereo.hpp
+-
 stdio.h
 -
 iostream
@@ -117,6 +119,20 @@ cxcore.h
 /usr/local/include/opencv2/core/cxcore.h
 opencv2/core/utility.hpp
 /usr/local/include/opencv2/core/opencv2/core/utility.hpp
+
+/usr/local/include/opencv2/core/cuda.hpp
+opencv2/core.hpp
+/usr/local/include/opencv2/core/opencv2/core.hpp
+opencv2/core/cuda_types.hpp
+/usr/local/include/opencv2/core/opencv2/core/cuda_types.hpp
+opencv2/core/cuda.inl.hpp
+/usr/local/include/opencv2/core/opencv2/core/cuda.inl.hpp
+
+/usr/local/include/opencv2/core/cuda.inl.hpp
+opencv2/core/cuda.hpp
+/usr/local/include/opencv2/core/opencv2/core/cuda.hpp
+
+/usr/local/include/opencv2/core/cuda_types.hpp
 
 /usr/local/include/opencv2/core/cvdef.h
 limits.h
@@ -297,6 +313,12 @@ opencv2/core/core_c.h
 /usr/local/include/opencv2/core/opencv2/core/core_c.h
 
 /usr/local/include/opencv2/core/version.hpp
+
+/usr/local/include/opencv2/cudastereo.hpp
+opencv2/core/cuda.hpp
+/usr/local/include/opencv2/opencv2/core/cuda.hpp
+opencv2/calib3d.hpp
+/usr/local/include/opencv2/opencv2/calib3d.hpp
 
 /usr/local/include/opencv2/features2d.hpp
 opencv2/core.hpp
