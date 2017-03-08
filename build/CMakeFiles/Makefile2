@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/asrl/ErhvervsPhd/Kode/C++/zed_app
 CMAKE_BINARY_DIR = /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/save_depth_img.dir
+
+# All Build rule for target.
+CMakeFiles/save_depth_img.dir/all:
+	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/depend
+	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles --progress-num=9,10 "Built target save_depth_img"
+.PHONY : CMakeFiles/save_depth_img.dir/all
+
+# Include target in all.
+all: CMakeFiles/save_depth_img.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/save_depth_img.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/save_depth_img.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 0
+.PHONY : CMakeFiles/save_depth_img.dir/rule
+
+# Convenience name for target.
+save_depth_img: CMakeFiles/save_depth_img.dir/rule
+
+.PHONY : save_depth_img
+
+# clean rule for target.
+CMakeFiles/save_depth_img.dir/clean:
+	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/clean
+.PHONY : CMakeFiles/save_depth_img.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/save_depth_img.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/calibrate.dir
 
 # All Build rule for target.
@@ -103,7 +140,7 @@ clean: CMakeFiles/calibrate.dir/clean
 CMakeFiles/record_depth.dir/all:
 	$(MAKE) -f CMakeFiles/record_depth.dir/build.make CMakeFiles/record_depth.dir/depend
 	$(MAKE) -f CMakeFiles/record_depth.dir/build.make CMakeFiles/record_depth.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles --progress-num=5,6 "Built target record_depth"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles --progress-num=7,8 "Built target record_depth"
 .PHONY : CMakeFiles/record_depth.dir/all
 
 # Include target in all.
@@ -130,43 +167,6 @@ CMakeFiles/record_depth.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/record_depth.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/save_depth_img.dir
-
-# All Build rule for target.
-CMakeFiles/save_depth_img.dir/all:
-	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/depend
-	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles --progress-num=7,8 "Built target save_depth_img"
-.PHONY : CMakeFiles/save_depth_img.dir/all
-
-# Include target in all.
-all: CMakeFiles/save_depth_img.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/save_depth_img.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/save_depth_img.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 0
-.PHONY : CMakeFiles/save_depth_img.dir/rule
-
-# Convenience name for target.
-save_depth_img: CMakeFiles/save_depth_img.dir/rule
-
-.PHONY : save_depth_img
-
-# clean rule for target.
-CMakeFiles/save_depth_img.dir/clean:
-	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/clean
-.PHONY : CMakeFiles/save_depth_img.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/save_depth_img.dir/clean
 
 .PHONY : clean
 
@@ -204,6 +204,43 @@ CMakeFiles/calibrate_stereo.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/calibrate_stereo.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/record_data.dir
+
+# All Build rule for target.
+CMakeFiles/record_data.dir/all:
+	$(MAKE) -f CMakeFiles/record_data.dir/build.make CMakeFiles/record_data.dir/depend
+	$(MAKE) -f CMakeFiles/record_data.dir/build.make CMakeFiles/record_data.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles --progress-num=5,6 "Built target record_data"
+.PHONY : CMakeFiles/record_data.dir/all
+
+# Include target in all.
+all: CMakeFiles/record_data.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/record_data.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/record_data.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build/CMakeFiles 0
+.PHONY : CMakeFiles/record_data.dir/rule
+
+# Convenience name for target.
+record_data: CMakeFiles/record_data.dir/rule
+
+.PHONY : record_data
+
+# clean rule for target.
+CMakeFiles/record_data.dir/clean:
+	$(MAKE) -f CMakeFiles/record_data.dir/build.make CMakeFiles/record_data.dir/clean
+.PHONY : CMakeFiles/record_data.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/record_data.dir/clean
 
 .PHONY : clean
 

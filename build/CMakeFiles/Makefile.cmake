@@ -53,8 +53,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/save_depth_img.dir/DependInfo.cmake"
   "CMakeFiles/calibrate.dir/DependInfo.cmake"
   "CMakeFiles/record_depth.dir/DependInfo.cmake"
-  "CMakeFiles/save_depth_img.dir/DependInfo.cmake"
   "CMakeFiles/calibrate_stereo.dir/DependInfo.cmake"
+  "CMakeFiles/record_data.dir/DependInfo.cmake"
   )

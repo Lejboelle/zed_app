@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/asrl/ErhvervsPhd/Kode/C++/zed_app/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named save_depth_img
+
+# Build rule for target.
+save_depth_img: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 save_depth_img
+.PHONY : save_depth_img
+
+# fast build rule for target.
+save_depth_img/fast:
+	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/build
+.PHONY : save_depth_img/fast
+
+#=============================================================================
 # Target rules for targets named calibrate
 
 # Build rule for target.
@@ -137,19 +150,6 @@ record_depth/fast:
 .PHONY : record_depth/fast
 
 #=============================================================================
-# Target rules for targets named save_depth_img
-
-# Build rule for target.
-save_depth_img: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 save_depth_img
-.PHONY : save_depth_img
-
-# fast build rule for target.
-save_depth_img/fast:
-	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/build
-.PHONY : save_depth_img/fast
-
-#=============================================================================
 # Target rules for targets named calibrate_stereo
 
 # Build rule for target.
@@ -161,6 +161,19 @@ calibrate_stereo: cmake_check_build_system
 calibrate_stereo/fast:
 	$(MAKE) -f CMakeFiles/calibrate_stereo.dir/build.make CMakeFiles/calibrate_stereo.dir/build
 .PHONY : calibrate_stereo/fast
+
+#=============================================================================
+# Target rules for targets named record_data
+
+# Build rule for target.
+record_data: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 record_data
+.PHONY : record_data
+
+# fast build rule for target.
+record_data/fast:
+	$(MAKE) -f CMakeFiles/record_data.dir/build.make CMakeFiles/record_data.dir/build
+.PHONY : record_data/fast
 
 calib_intrinsic.o: calib_intrinsic.cpp.o
 
@@ -243,6 +256,33 @@ depth_img.cpp.s:
 	$(MAKE) -f CMakeFiles/save_depth_img.dir/build.make CMakeFiles/save_depth_img.dir/depth_img.cpp.s
 .PHONY : depth_img.cpp.s
 
+record_data.o: record_data.cpp.o
+
+.PHONY : record_data.o
+
+# target to build an object file
+record_data.cpp.o:
+	$(MAKE) -f CMakeFiles/record_data.dir/build.make CMakeFiles/record_data.dir/record_data.cpp.o
+.PHONY : record_data.cpp.o
+
+record_data.i: record_data.cpp.i
+
+.PHONY : record_data.i
+
+# target to preprocess a source file
+record_data.cpp.i:
+	$(MAKE) -f CMakeFiles/record_data.dir/build.make CMakeFiles/record_data.dir/record_data.cpp.i
+.PHONY : record_data.cpp.i
+
+record_data.s: record_data.cpp.s
+
+.PHONY : record_data.s
+
+# target to generate assembly for a file
+record_data.cpp.s:
+	$(MAKE) -f CMakeFiles/record_data.dir/build.make CMakeFiles/record_data.dir/record_data.cpp.s
+.PHONY : record_data.cpp.s
+
 record_depth.o: record_depth.cpp.o
 
 .PHONY : record_depth.o
@@ -276,12 +316,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
+	@echo "... save_depth_img"
 	@echo "... calibrate"
 	@echo "... rebuild_cache"
 	@echo "... record_depth"
-	@echo "... edit_cache"
-	@echo "... save_depth_img"
 	@echo "... calibrate_stereo"
+	@echo "... record_data"
 	@echo "... calib_intrinsic.o"
 	@echo "... calib_intrinsic.i"
 	@echo "... calib_intrinsic.s"
@@ -291,6 +332,9 @@ help:
 	@echo "... depth_img.o"
 	@echo "... depth_img.i"
 	@echo "... depth_img.s"
+	@echo "... record_data.o"
+	@echo "... record_data.i"
+	@echo "... record_data.s"
 	@echo "... record_depth.o"
 	@echo "... record_depth.i"
 	@echo "... record_depth.s"

@@ -16,5 +16,8 @@ target_link_libraries(calibrate_stereo ${OpenCV_LIBS} "-lpopt")
 add_executable(record_depth record_depth.cpp)
 target_link_libraries(record_depth ${OpenCV_LIBS} "-lpopt")
 
+add_executable(record_data record_data.cpp)
+target_link_libraries(record_data ${OpenCV_LIBS} "-lpopt")
+
 add_executable(save_depth_img depth_img.cpp)
 target_link_libraries(save_depth_img ${OpenCV_LIBS} "-lpopt")

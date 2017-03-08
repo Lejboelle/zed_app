@@ -54,6 +54,9 @@ int main(int argc, char const *argv[])
   // Initialize video stream
   Size frameSize(static_cast<int>(im_width), static_cast<int>(im_height));
   VideoCapture cap(1);
+  cap.set(CAP_PROP_FRAME_WIDTH,im_width);
+  cap.set(CAP_PROP_FRAME_HEIGHT,im_height);
+  cap.set(CAP_PROP_FPS, 30);
   Mat img, img_res, imgL, imgR, imgDisp;
   Size displaySize(1280, 720);
   
@@ -89,11 +92,11 @@ int main(int argc, char const *argv[])
   fs1["ROI2"] >> validROI[1];
   
   //Variables for computing disparity
-  int max_disp = 160;
+  int max_disp = 64;	//160
   double lambda = 8000.0;
   double sigma  = 1.5;
   double vis_mult = 1.0;
-  int wsize = 3;
+  int wsize = 11;	//3
   Mat left_for_matcher, right_for_matcher;
   Mat left_disp,right_disp;
   Mat filtered_disp, filtered_disp_vis;
@@ -106,7 +109,7 @@ int main(int argc, char const *argv[])
   Point minLoc, maxLoc; 
     
   Ptr<StereoSGBM> left_matcher  = StereoSGBM::create(0,max_disp,wsize);
-  left_matcher->setP1(24*wsize*wsize);
+  left_matcher->setP1(24*wsize);	//24*wsize*wsize
   left_matcher->setP2(96*wsize*wsize);
   left_matcher->setPreFilterCap(63);
   left_matcher->setMode(StereoSGBM::MODE_SGBM_3WAY);
